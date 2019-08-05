@@ -118,23 +118,26 @@ header {
     position: relative;
     .overlay {
         position: absolute;
-        display: none;
-        align-items: flex-end;
+        opacity: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        text-align: center;
         top: 200px;
         left: 6px;
         bottom: 6px;
         right: -6px;
-        background-color: #555555d1;
+        background-color: #5555558f;
         color: #fff;
         font-weight: 400;
         padding: 10px;
+        transition: all .5s ease-in;
     }
 }
-.overlay-wrapper:hover {
+.grid-box:hover {
     position: relative;
     .overlay {
-        display: block;
-   
+        opacity: 1;
     }
 }
 
